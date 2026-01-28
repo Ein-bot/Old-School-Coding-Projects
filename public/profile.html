@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='styles.css' rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="boot/bootstrap-icons.css">
+    <link rel="stylesheet" href="boot/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        select {
+            width: 150px;
+            margin: 10px;
+        }
+
+        select:focus {
+            min-width: 150px;
+            width: auto;
+        }
+    </style>
+  </head>
+  
+  <body style="background-color: #383434">
+
+    <div class="topnav">
+      <a class="title" href="loginHome.html">POLYGONS</a>
+      <a class="navText" href="#NULL">Settings</a>
+      <a class="navText" href="#NULL">Messages</a>
+      <a class="navText"href="profile.html">Profile</a>
+    </div>
+    <div class="cardF" style=" display: flex; margin-left: auto; margin-right: auto;">
+        <div style="margin-left: auto; margin-right: auto;">
+            <img class='img-thumbnail rounded-circle w-50' src="media/profile.jpg" style=" margin-top: -50px;"> 
+            <div style="display: inline-block; margin-bottom: auto; color: white; ">
+                <h1 style="padding-top: 50%; display: inline-block;  " > User's Profile </h1>
+                <p style=" margin-top: auto; margin-bottom: auto; width: 20em;">Insert bio here about how much you love to play video games and how the women run the other way when they find out </p>
+            </div>
+            <div class="d-flex justify-content-center gap-4 m-4">
+                <a href="#" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-envelope"></span> Message 
+                </a>
+            </div>  
+        </div>                    
+    </div>
+
+    <!--<form style="position: relative;  text-align: center; color: white; width:50em;" > 
+        <div>
+            <label class="text-black"> Game Title:</label> <br>
+            <select size="1" id="title" name="title" style="width: 80%; height: 30px; color: #383434">
+                <option value = "Select One" id="0"> Select One </option>
+                <option value = "Jak & Daxter" id="1"> Jak & Daxter </option>
+                <option value = "Marvel Spider-Man" id="2"> Marvel Spider-Man </option>
+                <option value = "It Takes Two" id="3"> It Takes Two </option>
+                <option value = "Uncharted 4: A Thief's End" id="4"> Uncharted 4: A Thief's End </option>
+                <option value = "Burnout Paradise" id="5"> Burnout Paradise </option>
+            </select>
+            
+        </div> 
+        <div>
+            <label>Rating:</label>
+            <div class="container">
+                <div class="star-widget" style="direction: rtl;">
+                    
+                    <input type="radio" name="rate" id="rate-5" value="5 Stars">
+                    <label for="rate-5" class="fa fa-star"></label>
+                    
+                    <input type="radio" name="rate" id="rate-4" value="4 Stars">
+                    <label for="rate-4" class="fa fa-star"></label>
+                    
+                    <input type="radio" name="rate" id="rate-3" value="3 Stars">
+                    <label for="rate-3" class="fa fa-star"></label>
+                    
+                    <input type="radio" name="rate" id="rate-2" value="2 Stars">
+                    <label for="rate-2" class="fa fa-star"></label>
+                    
+                    <input type="radio" name="rate" id="rate-1" value="1 Star">
+                    <label for="rate-1" class="fa fa-star"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group mb-3">
+            <label>Review:</label>
+            <textarea style="background-color: #383434; color:white" class="form-control" rows="10" id="review" placeholder="Review" style="width:50em">  </textarea>
+        </div>
+        <button style="background-color: #ffae00; border-radius: 5px; border: none;" class='float-end' type="submit" id="submitPost"> Submit </button>
+    </form> -->
+    <div class="reveiwDiv" >
+        <div class="cardF">
+        <p class="username"> User <p>    
+        <div class="columnR" >
+            <figure style="text-align: center; width: 250px; height: 250px; border-style: solid; border-width: thick; object-fit: contain; contain: content; margin-bottom: 5px;">
+                <img src="media/jak-cover.jfif" alt="Avatar" style="width:100%; border-radius: 5px;">
+                <figcaption style="position: relative; text-align: right; color: white;"> Jak & Daxter </figcaption>
+            </figure>
+        </div>
+      
+        <p class="review"> 
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span> <br><br>  While the games themselves may be rather old, and some of the features quite dated, it is still a romp and is as great as it was roughly ten years ago. Fans of the series won't be disappointed, with all the new features including 3D, Trophies and much more. Also, new players will also get a blast out of it as they will be able to see what Naughty Dog used to do before Uncharted. One, if not the best Collection out there for the PS3. A must buy for any nostalgic gamer, or new ones looking for a thrill. 
+        </p>
+    </div>
+
+    <div class="cardF">
+        <p class="username"> User <p>    
+        <div class="columnR" >
+            <figure style="text-align: center; width: 250px; height: 250px; border-style: solid; border-width: thick; object-fit: contain; contain: content; margin-bottom: 5px;">
+                <img src="media/thps.jfif" alt="Avatar" style="width:100%; border-radius: 5px;">
+                <figcaption style="position: relative; text-align: right; color: white;"> Jak & Daxter </figcaption>
+            </figure>
+        </div>
+      
+        <p class="review"> 
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span><br><br>  Along with the professionals returning from the previous games (who have all been aged, and thus feel fresh again) there is a flood of recent talents added, too. Coupled with the new additions to the soundtrack that instantly gel with the rest of the package, you have an overall game that honors the current skateboarding culture. A return to the welcoming arcade-like gameplay of the franchise while giving everything a fresh coat of paint for the new era. This could be the start of the grand, new wave. </p>
+    </div>
+
+    <div class="cardF">
+        <p class="username"> User <p>    
+            <div class="columnR" >
+                <figure style="text-align: center; width: 250px; height: 250px; border-style: solid; border-width: thick; object-fit: contain; contain: content; margin-bottom: 5px;">
+                    <img src="media/tlou.jpg" alt="Avatar" style="width:100%; border-radius: 5px;">
+                    <figcaption style="position: relative; text-align: right; color: white;"> Jak & Daxter </figcaption>
+                </figure>
+            </div>
+      
+        <p class="review"> 
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span><br><br>  Naughty Dog has proven itself again as one of the most accomplished development teams in the world. With The Last of Us they have given us a consistent and interesting world that is supported by practically all of its game mechanics. From the rich complex combat system to the sublime sound design, this game immerses the player in one of the most visceral plots in this generation. Maybe the AI could have been better, but, overall, this game proves how far the craftsmanship of making video games has come. </p>
+    </div>
+    </div>
+      <script src="boot/bootstrap.min.css"></script>
+      <script src="scripts/view.js"></script>
+  </body>
+</html>
