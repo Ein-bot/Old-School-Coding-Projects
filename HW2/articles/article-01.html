@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link rel="icon" href="assets/202-2022137_computer-programming-computer-icons-programmer-programming-computer-monitor.png.jpeg">
+        <title>Articles</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/bootstrap-icons.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>To Do List</title>
+        <style>
+            body{background-color: white;}
+        </style>
+    </head>
+    <body class="text-light">
+        <nav class="navbar navbar-light bg-light container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-house"></i> Portfolio
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-options">
+                <i class="navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-options">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="bi bi-code-slash"></i> Code
+        </a> </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">
+                        <i class="bi bi-chat-dots"></i> Blog
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        <i class="bi bi-person"></i> About
+        </a> </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        <i class="bi bi-envelope"></i> Contact
+                    </a>
+        </li> </ul>
+    </div>
+    </nav>
+   
+    <h1 class="center">To Do List</h1>
+    <p>This is an event driven browser app that I made for homework in HTML class. It has a few issues that I would like to fix in the future.</p>
+    <ul>Adding more features such as a checkbox.</ul>
+    <ul>Adding another list like grocery.</ul>
+    <ul>Adding an alarm system that will alert the user when it is time for that task.</ul>
+    <form id="itemForm" class="center">
+    <div class="input-group">
+        <input type="text" class="form-control" id="itemInput" placeholder="List">
+        <div>
+            <button class="btn btn-black" type="submit">Add Item</button>
+        </div>
+    </div>
+    </form>
+    <div class="item-container center">
+        <div class="item-list my-5">
+    
+        </div>
+        <button type="button" class="btn btn-black" id="clear-list" >Clear Items</button>
+    </div>
+        <script src="app.js"></script>
+        <script src="scripts/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

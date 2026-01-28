@@ -1,0 +1,39 @@
+  body {
+    background: black;
+    color: black;
+  }
+  .btn-black {
+    border-color: black;
+    background: transparent;
+    color: black;
+  }
+ 
+  .form-control {
+    border-color: black;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  .visibility {
+    opacity: 0.5;
+  }
+  .showItem {
+    display: block;
+  }
+
+  .itemForm{
+      text-align: center;
+  }
+  .center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+  }
