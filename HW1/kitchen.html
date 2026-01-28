@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> Spooky Manor </title>
+        <link rel = "icon" href = "assets/hauntedhouselogo.jpg"/>
+        <style>
+            body{background-color: black;}
+            h1{color: white;}
+            p{color: white;}
+        </style>
+    </head>
+    <body>
+        <h1>Kitchen</h1>
+        <hr>
+        <img src = "assets/kitchen-home.gif" width = "250">
+        <p>You look around the kitchen.</p>
+        <h4>What do you do?</h4>
+        <div id = "options">
+            <button id = "search" onclick = "search()"> Search </button>
+            <a id='exit' href="hallway.html"><button> Go Back </button></a>
+        </div>
+        <script>
+            function search() { document.body.innerHTML = (
+                '<h1> Kitchen </h1><img src = "assets/kitchen-home.gif" width = "250"><p> You searched the kitchen and found nothing useful, but kitchen utensils.</p><a href = "hallway.html"> <h4> Go back </h4>'
+            )};
+            exit.href+=location.search;
+        </script>
+    </body>
+</html>

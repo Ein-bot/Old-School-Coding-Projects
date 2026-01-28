@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> Spooky Manor </title>
+        <link rel = "icon" href = "assets/hauntedhouselogo.jpg"/>
+        <style>
+            body{background-color: black;}
+            h1{color: white;}
+            p{color: white;}
+        </style>
+    </head>
+    <body>
+        <h1>Hallway</h1>
+        <hr>
+        <img src = "assets/creepy-kny.gif" width = "280">
+        <p>The door shuts behind you and cannot be opened from the inside!</p>
+        <p>Creepy figure tells you theres no way out as they disappear back into the darkness...</p>
+        <ul>
+            <li> <a id="kitchen" href="kitchen.html"> Kitchen </a> </li>
+            <li> <a id="lBedroom" href="lBedroom.html"> Left Bedroom </a> </li>
+            <li> <a id="rBedroom" href="rBedroom.html"> Right Bedroom </a> </li>
+            <li> <a id="livingroom" href="livingroom.html"> Living Room </a> </li>
+        </ul>
+        <iframe src = 'inventory.html'></iframe> 
+        <script> 
+            kitchen.href+=location.search; 
+            lBedroom.href+=location.search; 
+            rBedroom.href+=location.search;
+            livingroom.href+=location.search;
+        </script>
+    </body>
+</html>

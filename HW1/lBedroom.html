@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> Spooky Manor </title>
+        <link rel = "icon" href = "assets/hauntedhouselogo.jpg"/>
+        <style>
+            body{background-color: black;}
+            h1{color: white;}
+            p{color: white;}
+        </style>
+    </head>
+    <body>
+        <h1>Left Bedroom</h1>
+        <hr>
+        <img src = "assets/bed-bedroom.gif" width = "480">
+        <p>You find someone rolling around the floor rentlessly.</p>
+        <h4>What do you do?</h4>
+        <div id = "options">
+            <button id="search" onclick="search()"> Search </button>
+            <a id="gameover" onclick="die()"><button> Go Back </button></a>
+        </div>
+        <script>
+            exit.href+=location.search;
+            function search() { document.body.innerHTML = ( 
+                '<h1> Left Bedroom </h1><img src = "assets/cross-glittery.gif" width = "480"><p> You searched the room and found the person clutching a cross</p><p> You sneakily take it away from him. The cross is engraved with "If wielded by a mortal, no spirits shall harm!"</p><a href = "hallway.html?cross=1"> <h4> Sneak away </h4>'
+            )};
+            function die() { document.body.innerHTML = (
+            '<h1> Left Bedroom </h1><img src = "assets/spooky-fnaf.gif" width = "480"><p> You stepped on the wrong floor board making it creek loadly </p> <p> Too late to run, he notcied you! </p><a href = "index.html"> <h4> Dead End </h4>'); }
+        </script>
+    </body>
+</html>

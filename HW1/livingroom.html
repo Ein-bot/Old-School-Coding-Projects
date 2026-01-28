@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title> Spooky Manor </title>
+        <link rel = "icon" href = "assets/hauntedhouselogo.jpg"/>
+        <style>
+            body{background-color: black;}
+            h1{color: white;}
+            p{color: white;}
+        </style>
+    </head>
+    <body>
+        <h1>Living Room</h1>
+        <hr>
+        <img id = 'gone' src = "assets/scary-ghost.gif" width = "380">
+        <p>A scary ghost is at the exit.</p>
+        <h4>What do you do?</h4>
+        <div id="options">
+            <button id="search" onclick="search()"> Search </button>
+            <a id='exit' href="hallway.html"><button> Go Back </button></a>
+        </div>
+        <script>
+            exit.href+=location.search;
+            var queryString = new URLSearchParams(location.search); 
+            var cross = +queryString.get("cross");
+            function search() { 
+                if (cross > 0){ document.body.innerHTML = (
+                    '<h1> GET OUT NOW! </h1><img src = "assets/ghost-opening-doors.gif" width = "480"><p>You can finally get out! Tine to find better friends.</p><a href = "index.html"> <h4> Restart? </h4>'
+                    )
+                    }
+                else { document.body.innerHTML = (
+                    '<h1> Living Room </h1><img src = "assets/spooky-fnaf.gif" width = "480"><p> The ghost takes hold of you, there is no escape</p><a href = "index.html"> <h4> Dead End </h4>'
+                )}
+        };
+        </script>
+    </body>
+</html>
